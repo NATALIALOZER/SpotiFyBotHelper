@@ -10,10 +10,7 @@ import schedule
 import time
 import threading
 
-import os
-from flask import Flask
 
-app = Flask(__name__)
 
 #Парсинг курса
 # На некоторых сайтах стоит минимальная защита и они не отдают контент без user-agent
@@ -60,6 +57,3 @@ if __name__ == '__main__':
     t2.start()
     t1.join()
     t2.join()
-    port = int(os.environ.get("PORT", 8080))
-    spotifyreminder.run(host='0.0.0.0', port=port)
-
