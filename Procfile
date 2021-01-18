@@ -1,2 +1,2 @@
-bot: gunicorn run_server:server
+bot: gunicorn run_server:server $PORT
 worker: python3 bot.py
