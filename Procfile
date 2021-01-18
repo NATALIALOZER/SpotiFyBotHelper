@@ -1,1 +1,1 @@
-web: python spotifyreminder.py
+web: python spotifyreminder.py $PORT
