@@ -1,1 +1,2 @@
-web:python spotifyreminder.py $PORT
+web: gunicorn run_server:server
+worker: python3 bot.py
