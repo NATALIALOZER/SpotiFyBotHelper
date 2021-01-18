@@ -1,2 +1,2 @@
-web: gunicorn run_server:server
+bot: gunicorn run_server:server
 worker: python3 bot.py
