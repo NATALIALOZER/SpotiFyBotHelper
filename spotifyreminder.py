@@ -43,7 +43,7 @@ def new_notifi_text(chat_id):
 		
 def notifications(chat_id):
     """Каждый день проверяем в 12:00 не 21 ли число"""
-    schedule.every().day.at('18:20').do(new_notifi_text, chat_id)
+    schedule.every().day.at('19:50').do(new_notifi_text, chat_id)
     while True:
         schedule.run_pending()
         time.sleep(3) 
